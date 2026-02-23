@@ -1,4 +1,4 @@
 # GuessingApp #
 
-## UC5 - Storage Service ##
-    - Store and retrieve game results for future reference
+## UC6 - Game Restart and Exit##
+    - Allow the player to restart or exit the game safely.
