@@ -1,4 +1,4 @@
 # GuessingApp #
 
-## UC2 - User Guess Submission ##
-    - Allow the player to submit a guess and recieve immediate feedback.
+## UC3 - Hint Generation ##
+    - Provide helpful hints to guide the player toward the correct answer.

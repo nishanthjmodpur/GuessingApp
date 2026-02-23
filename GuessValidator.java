@@ -16,8 +16,8 @@ class GuessValidator {
         if (guess == target) {
             return "CORRECT";
         } else if (guess < target) {
-            return "LOW";
+            return "Guess is LOW";
         }
-        return "HIGH";
+        return "Guess is HIGH";
     }
 }

@@ -21,6 +21,7 @@ public class GuessingApp {
 
 		Scanner scanner = new Scanner(System.in);
 		int attempts = 0;
+		int hintCount = 0;
 
 		/*
 		 * Game loop runs until the player
@@ -40,6 +41,14 @@ public class GuessingApp {
 
 			if ("CORRECT".equals(result)) {
 				break;
+			} else {
+				System.out.print("Do you want a hint? [y/n] ");
+				String ans = scanner.next();
+				if ("y".equals(ans.toLowerCase())) {
+					hintCount++;
+					String hint = HintService.generateHint(gameConfig.getTargetNumber(), hintCount);
+					System.out.println(hint);
+				}
 			}
 		}
 	}
