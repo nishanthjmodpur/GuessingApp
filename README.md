@@ -1,4 +1,4 @@
 # GuessingApp #
 
-## UC4 - Error Handling and Validation ##
-    - Validates user inputs throughout the game.
+## UC5 - Storage Service ##
+    - Store and retrieve game results for future reference
