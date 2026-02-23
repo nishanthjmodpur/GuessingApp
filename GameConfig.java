@@ -1,5 +1,19 @@
 import java.util.*;
 
+/**
+ * Use Case 1: Game Initialization
+ * 
+ * This class is responsible for:
+ * - Setting game boundaries
+ * - Generating a random target number
+ * - Displaying game rules
+ * 
+ * Demonstrates:
+ * - Encapsulation
+ * - Constructor initializtion
+ * - Random number generation
+ */
+
 class GameConfig {
 	private final int MIN = 1;
 	private final int MAX = 100;
@@ -8,6 +22,10 @@ class GameConfig {
 	
 	int targetNumber;
 
+	/**
+	 * Constructor is automatically called when a GameConfig object is created.
+	 * It initializes the random target number for the game.
+	 */
 	public GameConfig() {
 		Random random = new Random();
 		this.targetNumber = random.nextInt(MAX-MIN+1) + MIN;
