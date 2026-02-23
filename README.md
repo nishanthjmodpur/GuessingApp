@@ -1,4 +1,4 @@
 # GuessingApp #
 
-## UC3 - Hint Generation ##
-    - Provide helpful hints to guide the player toward the correct answer.
+## UC4 - Error Handling and Validation ##
+    - Validates user inputs throughout the game.

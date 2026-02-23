@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 
 public class GuessingApp {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InvalidInputException {
 		System.out.println("Welcome to the Guessing App");
 
 		GameConfig gameConfig = new GameConfig();
@@ -29,7 +29,7 @@ public class GuessingApp {
 		 */
 		while (attempts < gameConfig.getMaxAttempts()) {
 			System.out.print("Enter your guess: ");
-			int guess = scanner.nextInt();
+			int guess = ValidationService.validateInput(scanner.nextLine());
 			attempts++;
 
 			String result = GuessValidator.validateGuess(guess, gameConfig.getTargetNumber());
