@@ -1,4 +1,4 @@
 # GuessingApp #
 
-## UC1 - Game Initialization ##
-    - Initialize guessing game with required configurations
+## UC2 - User Guess Submission ##
+    - Allow the player to submit a guess and recieve immediate feedback.
