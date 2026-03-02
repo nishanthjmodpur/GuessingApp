@@ -1,3 +1,6 @@
+/**
+* This class is responsible to validate user input. Checks if input is between 1 and 100.
+*/
 class ValidationService {
     public static int validateInput(String input) throws InvalidInputException {
         try {
